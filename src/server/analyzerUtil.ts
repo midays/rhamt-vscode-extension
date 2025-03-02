@@ -215,6 +215,7 @@ export class AnalyzerUtil {
                 params.push('--rules');
                 params.push(`${entry}`);
             });
+            params.push('--enable-default-rulesets=false')
         }
 
         console.log("Options: ")
